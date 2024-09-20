@@ -29,7 +29,10 @@ This is a backend server for a bloglist application implemented with React and P
 1. **Build the Docker image**:
    ```bash
    docker build -t bloglist-backend .
+2. **Start the Container**:
+   ```bash
    docker run -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 bloglist-backend
+3. **Start the Server in the Root Directory**:
+   ```bash
    npm run dev
-
 
