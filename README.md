@@ -18,6 +18,18 @@ This is a backend server for a bloglist application implemented with React and P
 - **Docker**: Containerization platform for easy deployment.
 
 ## Getting Started
-- build the Dockerfile
-- run the docker image
-- npm run dev (or look at package.json to see other initialization methods)
+
+### Prerequisites
+
+- Docker
+- Node.js
+
+### Installation
+
+1. **Build the Docker image**:
+   ```bash
+   docker build -t bloglist-backend .
+   docker run -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 bloglist-backend
+   npm run dev
+
+
